@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Creator Portfolio | Digital Experiences</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#e0e3e5",
+                    "on-background": "#191c1e",
+                    "primary-container": "#ffffff",
+                    "on-secondary-container": "#426873",
+                    "secondary-container": "#bee6f3",
+                    "surface-dim": "#d8dadc",
+                    "primary-fixed-dim": "#c6c6c7",
+                    "on-tertiary": "#ffffff",
+                    "surface-tint": "#5d5f5f",
+                    "inverse-surface": "#2d3133",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-fixed-variant": "#254c57",
+                    "on-primary-fixed": "#1a1c1c",
+                    "on-error": "#ffffff",
+                    "inverse-on-surface": "#eff1f3",
+                    "secondary-fixed-dim": "#a5cdda",
+                    "surface": "#f7f9fb",
+                    "on-tertiary-fixed-variant": "#454747",
+                    "tertiary-fixed-dim": "#c6c6c7",
+                    "secondary": "#3e646f",
+                    "tertiary-container": "#ffffff",
+                    "inverse-primary": "#c6c6c7",
+                    "on-primary-container": "#747676",
+                    "tertiary-fixed": "#e2e2e2",
+                    "surface-bright": "#f7f9fb",
+                    "on-error-container": "#93000a",
+                    "surface-container-low": "#f2f4f6",
+                    "on-surface-variant": "#444748",
+                    "tertiary": "#5d5f5f",
+                    "on-primary-fixed-variant": "#454747",
+                    "surface-container-highest": "#e0e3e5",
+                    "on-surface": "#191c1e",
+                    "secondary-fixed": "#c1e9f6",
+                    "outline-variant": "#c4c7c8",
+                    "error-container": "#ffdad6",
+                    "primary": "#5d5f5f",
+                    "background": "#f7f9fb",
+                    "on-primary": "#ffffff",
+                    "primary-fixed": "#e2e2e2",
+                    "surface-container-high": "#e6e8ea",
+                    "surface-container": "#eceef0",
+                    "on-tertiary-container": "#747676",
+                    "outline": "#747878",
+                    "on-secondary-fixed": "#001f27",
+                    "error": "#ba1a1a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-gap": "120px",
+                    "unit": "8px",
+                    "container-max": "1280px",
+                    "margin-page": "40px",
+                    "gutter": "32px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "label-caps": ["Plus Jakarta Sans"],
+                    "display": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "body-lg": ["1.125rem", {"lineHeight": "1.7", "fontWeight": "400"}],
+                    "headline-lg": ["2.5rem", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "headline-md": ["1.75rem", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-md": ["1rem", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-caps": ["0.75rem", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "display": ["4.5rem", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+</script>
+<style>
+    body {
+        background-color: #f7f9fb;
+        color: #191c1e;
+        -webkit-font-smoothing: antialiased;
+    }
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .soft-shadow {
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+    }
+</style>
+</head>
+<body class="font-body-md text-on-background">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-lg border-b border-slate-100/50 dark:border-slate-800/50 shadow-[0_10px_40px_rgba(0,0,0,0.04)]">
+<nav class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<div class="text-xl font-bold tracking-tighter text-slate-900 dark:text-white">Creator Portfolio</div>
+<div class="hidden md:flex items-center gap-10 font-['Plus_Jakarta_Sans'] text-sm font-medium tracking-wide">
+<a class="text-sky-500 dark:text-sky-400 border-b-2 border-sky-500/50 pb-1 transition-all duration-300 ease-in-out active:scale-95" href="#portfolio">Portfolio</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-sky-500 dark:hover:text-sky-300 transition-colors duration-300 transition-all duration-300 ease-in-out active:scale-95" href="#about">About</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-sky-500 dark:hover:text-sky-300 transition-colors duration-300 transition-all duration-300 ease-in-out active:scale-95" href="#resume">Resume</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-sky-500 dark:hover:text-sky-300 transition-colors duration-300 transition-all duration-300 ease-in-out active:scale-95" href="#contact">Contact</a>
+</div>
+<button class="bg-[#7CB9E8] text-white px-6 py-2.5 rounded-lg text-sm font-semibold hover:shadow-lg transition-all duration-300 active:scale-95">
+    Get in Touch
+</button>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="pt-40 pb-24 px-8 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+<div class="flex-1 space-y-8">
+<div class="inline-block px-4 py-1.5 bg-[#E0F2F7] text-secondary text-label-caps rounded-full">
+                    DIGITAL PRODUCT DESIGNER
+                </div>
+<h1 class="font-display text-display leading-tight">Bang<span class="text-[#7CB9E8]">Fadhil.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    Designing digital experiences with a human touch. I build interfaces that feel as natural as a conversation.
+                </p>
+<div class="flex gap-4 pt-4">
+<button class="bg-[#7CB9E8] text-white px-8 py-4 rounded-lg font-semibold hover:shadow-xl transition-all duration-300">
+                        View Projects
+                    </button>
+<button class="border border-slate-200 px-8 py-4 rounded-lg font-semibold text-slate-600 hover:border-[#7CB9E8] hover:text-[#7CB9E8] transition-all duration-300">
+                        My Story
+                    </button>
+</div>
+</div>
+<div class="flex-1 relative">
+<div class="w-full aspect-square rounded-2xl overflow-hidden soft-shadow relative z-10">
+<img alt="Personal profile" class="w-full h-full object-cover" data-alt="Close-up portrait of a friendly creative professional with a warm smile in a brightly lit modern studio with minimalist decor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgw-GUwTqzSEALjaLvhgq3JJEmPCF9Sj9XcMswts7TFfNK5hmoGW9o_rrWE1udJKG9bCsfaWsFXrBmy60nU53FQoWugpJfb1CstkVcBUOp7GcKngLYQkoRVVyX92dV_iqYKbL3aYv8U3l8vRBM0lD-Nj032gzXCrki8dNfKKbcpFCfWTHXFpDESe0CjnJcM1EZ2zUWQuk_rK_VexKwzYJoRlQEiNAFWCRF5UbSUz0UqrFe6qNQy2lpIP3TQPZsLmOP1n5rbe3C6u4Y"/>
+</div>
+<div class="absolute -bottom-6 -right-6 w-48 h-48 bg-[#bee6f3] rounded-2xl -z-0 opacity-50 blur-2xl"></div>
+</div>
+</section>
+<!-- About Me Section -->
+<section class="py-section-gap px-8 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12" id="about">
+<div class="md:col-span-5">
+<h2 class="font-headline-lg text-headline-lg mb-6">A bit about me.</h2>
+<span class="material-symbols-outlined text-[#7CB9E8] text-5xl" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<div class="md:col-span-7 space-y-6 text-on-surface-variant">
+<p class="font-body-lg text-body-lg">
+                    I believe that great design is invisible. My journey started in a small boutique studio where I learned that user empathy is more than just a buzzword—it's the foundation of everything we build.
+                </p>
+<p class="font-body-lg text-body-lg">
+                    When I'm not pushing pixels, you'll find me exploring mountain trails or experimenting with analog photography. I bring that same sense of curiosity and attention to detail to every digital product I touch.
+                </p>
+<div class="pt-8 flex flex-wrap gap-3">
+<span class="px-4 py-2 bg-[#E0F2F7] text-secondary text-label-caps rounded-full">UX Strategy</span>
+<span class="px-4 py-2 bg-[#E0F2F7] text-secondary text-label-caps rounded-full">Interface Design</span>
+<span class="px-4 py-2 bg-[#E0F2F7] text-secondary text-label-caps rounded-full">Motion</span>
+<span class="px-4 py-2 bg-[#E0F2F7] text-secondary text-label-caps rounded-full">Prototyping</span>
+</div>
+</div>
+</section>
+<!-- Portfolio Section -->
+<section class="py-section-gap px-8 max-w-7xl mx-auto" id="portfolio">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="font-headline-lg text-headline-lg">Selected Work.</h2>
+<p class="text-on-surface-variant mt-2">A collection of projects that define my philosophy.</p>
+</div>
+<div class="hidden md:block">
+<span class="text-label-caps text-slate-400">SCROLL TO EXPLORE</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Project Card 1 -->
+<div class="group cursor-pointer">
+<div class="rounded-xl overflow-hidden soft-shadow bg-white mb-6 aspect-[4/3] transition-transform duration-500 group-hover:-translate-y-2">
+<img alt="Data visualization app" class="w-full h-full object-cover transition-scale duration-500 group-hover:scale-105" data-alt="Sleek mobile app interface showing clean data visualization charts and minimalist dashboard on a light surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6CfbWBbJrU18ISLF6L_UZJqBZuFzthsJoG2W8MeS3BvAVRW3efSFFtQLkUwYSZMejWqat0BA-OedNIsvez0-jZDFukpEZxdIW6jhYIWKaEvzrDFJR8Jh7sS60Ycu-kzERyshDq4eNIZNUEqd3ZtHk6qPO7zc2ZkKFkQqEMyqbvmVIh70TUa8SemxKWTXRSOVnJgrfqV-HzmZNPrPg9WKOUCF0xZ_3MxYNF98GhlLe3cBVYi1X1JqQgZFGf5UCunC9LjkF7A3VAmKy"/>
+</div>
+<div class="space-y-2">
+<span class="text-label-caps text-[#7CB9E8]">PRODUCT DESIGN • 2023</span>
+<h3 class="font-headline-md text-headline-md group-hover:text-[#7CB9E8] transition-colors">Lumina Analytics</h3>
+<p class="text-on-surface-variant">Simplifying complex data sets into intuitive, actionable insights for small businesses.</p>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="group cursor-pointer mt-0 md:mt-24">
+<div class="rounded-xl overflow-hidden soft-shadow bg-white mb-6 aspect-[4/3] transition-transform duration-500 group-hover:-translate-y-2">
+<img alt="E-commerce experience" class="w-full h-full object-cover transition-scale duration-500 group-hover:scale-105" data-alt="Contemporary e-commerce website layout featuring high-end furniture and plenty of whitespace on a high-resolution screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDl-j8WahSzJLPupeD8KvSx2CGOlKfLoXACnqKTKkDNA4kY9hJm5djeDlK2_wnVDcMUERyYnQb1Nbw-LKc8X8vmYSduPMSXRE9kJi0FlibxNGSlDNf6bUzTaa2oq4hRKoJrkfVbvVZtsDx6Bqi69PA80TFqs3ZTfl1kdirYHrDOCGFX9gAnEk1CxAGh0MWPjsTLxYWVT7Kyhq1iw051Hd09SyZ3XfmysJ9VX8rK8zu-swBAXM9v0B4f0-scptId9_mWdZbJ1bDqHTLN"/>
+</div>
+<div class="space-y-2">
+<span class="text-label-caps text-[#7CB9E8]">E-COMMERCE • 2022</span>
+<h3 class="font-headline-md text-headline-md group-hover:text-[#7CB9E8] transition-colors">Nordic Space</h3>
+<p class="text-on-surface-variant">A minimal shopping experience for a high-end Scandinavian furniture brand.</p>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="group cursor-pointer">
+<div class="rounded-xl overflow-hidden soft-shadow bg-white mb-6 aspect-[4/3] transition-transform duration-500 group-hover:-translate-y-2">
+<img alt="Collaboration tool" class="w-full h-full object-cover transition-scale duration-500 group-hover:scale-105" data-alt="Close-up of a digital collaboration tool interface with colorful avatars and clean typography on a tablet screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBL7VbXjUXj6FQyj7E8GW-V6iTQAXoBmE474-8YHweP1r00OtEihk5MyDb4w9UiTYYWtG32ZFuECzptqftza1eTkRNvOlaO_Q_8R2_zO44PNPw8TNZCO-mfp-Ztc10xHRyZffls15MkwKXl5ZGO9s3FyyIf20ILU06TfzhN_jfxYkxw1mWTVas2CuNFEAAcbP_b9o8_OEP-OPeYFPdPW1IYzAQTjwnUX_FP6YlZtMgkUuzjmf7A0iV0ECvH6qjUM0iY642RdnuVEXLl"/>
+</div>
+<div class="space-y-2">
+<span class="text-label-caps text-[#7CB9E8]">SaaS • 2023</span>
+<h3 class="font-headline-md text-headline-md group-hover:text-[#7CB9E8] transition-colors">Echo Teams</h3>
+<p class="text-on-surface-variant">Redefining how remote creative teams communicate through spatial interface design.</p>
+</div>
+</div>
+<!-- Project Card 4 -->
+<div class="group cursor-pointer mt-0 md:mt-24">
+<div class="rounded-xl overflow-hidden soft-shadow bg-white mb-6 aspect-[4/3] transition-transform duration-500 group-hover:-translate-y-2">
+<img alt="Mobile banking" class="w-full h-full object-cover transition-scale duration-500 group-hover:scale-105" data-alt="Minimalist mobile banking app interface showing simple wallet balance and transaction history on a white smartphone" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwUqXZIUNWTLY9RfQDj_SRtykUdpi6TooLfpS5gMTO9zGKp_AP2wRTIz7jZGP3XuNlXOgLQwY8Of-iLHBfJqk-p2LsY97wk2RatbzceVUbKICkCDA7tbcGMKV9cM9hdTVqjSzpBDfqRfrMqfkNLYZ13wk3sl19_wW2ojs4fCwU759VWz0ROXgJvlt-wpBP_eyxpvkpQJxFiNAsqQDFRgXxEbaff67CkQzKtRwsKEM0VSmNE1Xi9KVD1h9Eya3jcQBjqPykuD0UjeyH"/>
+</div>
+<div class="space-y-2">
+<span class="text-label-caps text-[#7CB9E8]">FINTECH • 2021</span>
+<h3 class="font-headline-md text-headline-md group-hover:text-[#7CB9E8] transition-colors">Flow Wallet</h3>
+<p class="text-on-surface-variant">Humanizing the banking experience through soft colors and friendly motion design.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Resume Section -->
+<section class="py-section-gap px-8 max-w-7xl mx-auto bg-white/50 rounded-[2rem] my-24 border border-slate-100" id="resume">
+<div class="max-w-4xl mx-auto py-16">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg">Experience &amp; Education.</h2>
+<p class="text-on-surface-variant mt-4">The path that brought me here.</p>
+</div>
+<div class="space-y-12">
+<!-- Timeline Item 1 -->
+<div class="flex flex-col md:flex-row gap-4 md:gap-24 items-start">
+<div class="md:w-32 pt-1">
+<span class="text-label-caps text-slate-400">2021 — PRES</span>
+</div>
+<div class="flex-1">
+<h4 class="font-headline-md text-xl mb-2">Senior Product Designer</h4>
+<p class="text-secondary font-medium mb-3">Studio Minimal, Remote</p>
+<p class="text-on-surface-variant">Leading design systems and user research for early-stage startups in the productivity space.</p>
+</div>
+</div>
+<!-- Timeline Item 2 -->
+<div class="flex flex-col md:flex-row gap-4 md:gap-24 items-start border-t border-slate-100 pt-12">
+<div class="md:w-32 pt-1">
+<span class="text-label-caps text-slate-400">2018 — 2021</span>
+</div>
+<div class="flex-1">
+<h4 class="font-headline-md text-xl mb-2">Visual Designer</h4>
+<p class="text-secondary font-medium mb-3">Creative Pulse Agency, New York</p>
+<p class="text-on-surface-variant">Crafting brand identities and high-fidelity web experiences for international fashion clients.</p>
+</div>
+</div>
+<!-- Timeline Item 3 -->
+<div class="flex flex-col md:flex-row gap-4 md:gap-24 items-start border-t border-slate-100 pt-12">
+<div class="md:w-32 pt-1">
+<span class="text-label-caps text-slate-400">2014 — 2018</span>
+</div>
+<div class="flex-1">
+<h4 class="font-headline-md text-xl mb-2">BFA in Interaction Design</h4>
+<p class="text-secondary font-medium mb-3">Rhode Island School of Design</p>
+<p class="text-on-surface-variant">Focusing on the intersection of traditional print typography and modern digital systems.</p>
+</div>
+</div>
+</div>
+<div class="mt-20 text-center">
+<a class="inline-flex items-center gap-2 font-bold text-[#7CB9E8] hover:underline transition-all" href="#">
+                        Download Full Resume 
+                        <span class="material-symbols-outlined" data-icon="download">download</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-gap px-8 max-w-3xl mx-auto text-center" id="contact">
+<h2 class="font-display text-5xl mb-8">Let's create something together.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">
+                Currently looking for new opportunities and interesting collaborations. 
+                If you have a project in mind, let's talk.
+            </p>
+<a class="text-3xl md:text-5xl font-bold text-slate-900 hover:text-[#7CB9E8] transition-colors border-b-4 border-[#bee6f3] pb-2" href="mailto:hello@alexrivers.com">
+                hello@alexrivers.com
+            </a>
+<div class="mt-16 flex justify-center gap-8">
+<a class="w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:bg-[#7CB9E8] hover:text-white hover:border-[#7CB9E8] transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="link">link</span>
+</a>
+<a class="w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:bg-[#7CB9E8] hover:text-white hover:border-[#7CB9E8] transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</a>
+<a class="w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:bg-[#7CB9E8] hover:text-white hover:border-[#7CB9E8] transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="alternate_email">alternate_email</span>
+</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 mt-24 border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-950">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-8 gap-8">
+<div class="text-lg font-semibold text-slate-800 dark:text-slate-200">Bang Fadhil</div>
+<div class="font-['Plus_Jakarta_Sans'] text-xs font-light tracking-widest uppercase text-slate-400 dark:text-slate-500">
+                © 2024 Digital Creator. Crafted with Soft Minimalism.
+            </div>
+<div class="flex gap-8">
+<a class="font-['Plus_Jakarta_Sans'] text-xs font-light tracking-widest uppercase text-slate-400 dark:text-slate-500 hover:text-sky-500 dark:hover:text-sky-300 transition-all opacity-80 hover:opacity-100 duration-200" href="#">LinkedIn</a>
+<a class="font-['Plus_Jakarta_Sans'] text-xs font-light tracking-widest uppercase text-slate-400 dark:text-slate-500 hover:text-sky-500 dark:hover:text-sky-300 transition-all opacity-80 hover:opacity-100 duration-200" href="#">GitHub</a>
+<a class="font-['Plus_Jakarta_Sans'] text-xs font-light tracking-widest uppercase text-slate-400 dark:text-slate-500 hover:text-sky-500 dark:hover:text-sky-300 transition-all opacity-80 hover:opacity-100 duration-200" href="#">Dribbble</a>
+<a class="font-['Plus_Jakarta_Sans'] text-xs font-light tracking-widest uppercase text-slate-400 dark:text-slate-500 hover:text-sky-500 dark:hover:text-sky-300 transition-all opacity-80 hover:opacity-100 duration-200" href="#">Email</a>
+</div>
+</div>
+</footer>
+</body>
+</html>
